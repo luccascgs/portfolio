@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+nav .logo {
+  height: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  font-family: 'Bebas Neue', sans-serif;
+  height: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav div *+* {
+  margin-left: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav * {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/*HEADER*/
+header {
+  width: 100%;
+  height: calc(90vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  line-height: 3rem;
+  font-size: 4rem;
+}
+
+header h1 {
+  font-family: Brasika;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+header h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2rem;
+  line-height: 1rem;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header h4 {
+  position: absolute;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+header .scribble {
+  transform: translateY(10%);
+  height: 9rem;
+  position: absolute;
+}
+
+.scrollDown {
+  font-size: 0.7rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Archivo Black', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.scrollDown svg {
+  height: 1.3rem;
+  margin-bottom: 0.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*SOBRE MIM*/
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.about-me img {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3rem;
+}
+
+.about-me .column1 {
+  padding: 0 2rem;
+  width: 40%;
+}
+
+.about-me .column2 {
+  width: 60%;
+  padding: 0 2rem;
+}
+
+.about-me h1 {
+  color: var(--emerald);
+  font-family: Brasika;
+  font-size: 5rem;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.about-me p {
+  margin-bottom: 1rem;
+}
+
+.about-me a {
+  color: var(--emerald);
+}
+
+.about-me .contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me a+a{
+  margin-left: 2rem;
+}
+
+.about-me quote span{
+  font-family: Brasika;
+}
+
+.about-me quote{
+  display: flex;
+  border-left: 2px var(--gray) solid;
+  margin-bottom: 3rem;
+}
+
+.about-me quote p{
+  margin: 0;
+}
+
+.about-me quote span{
+  color: var(--gray);
+  font-size: 3rem;
+  line-height: 0;
+  transform: translateY(70%);
+  margin: 0 1rem;
+}
+
+.about-me quote p{
+  text-align: right;
+}
+
+
+/* HABILIDADES */
+.skills{
+  margin-top: 3rem;
+}
+
+.skills h2{
+  color: var(--emerald);
+  font-family: Brasika;
+  font-size: 3rem;
 }
