@@ -6,7 +6,7 @@ export default function Skills() {
                 <ul>
                     <div>
                         <li>
-                            <img src="https://cdn.discordapp.com/attachments/965003047824683098/1164343094225928362/image.png?ex=6542de02&is=65306902&hm=81b8ca93e46552458a09b24bbd0b1906e632d51c7305cc895cbf254d646268a1&" />
+                            <img alt="Logo do Illustrator" src="https://cdn.discordapp.com/attachments/965003047824683098/1164343094225928362/image.png?ex=6542de02&is=65306902&hm=81b8ca93e46552458a09b24bbd0b1906e632d51c7305cc895cbf254d646268a1&" />
                             <div>
                                 <h3>Illustrator</h3>
                                 <span>
@@ -19,7 +19,7 @@ export default function Skills() {
                             </div>
                         </li>
                         <li>
-                            <img src="https://cdn.discordapp.com/attachments/965003047824683098/1164343122747203684/image.png?ex=6542de08&is=65306908&hm=fb4d8ec56e73fba0df0af3a141e59879f888612b7a4602dc1d4e5f945e5d5c7b&" />
+                            <img alt="Logo do Premiere" src="https://cdn.discordapp.com/attachments/965003047824683098/1164343122747203684/image.png?ex=6542de08&is=65306908&hm=fb4d8ec56e73fba0df0af3a141e59879f888612b7a4602dc1d4e5f945e5d5c7b&" />
                             <div>
                                 <h3>Premiere</h3>
                                 <span>
@@ -32,7 +32,7 @@ export default function Skills() {
                             </div>
                         </li>
                         <li>
-                            <img src="https://cdn.discordapp.com/attachments/965003047824683098/1164343271804387388/image.png?ex=6542de2c&is=6530692c&hm=631138e699bf7bae1b59b7a53192a6472a1d3c9b9532cc1ecec416a7aaf315a0&" />
+                            <img alt="Logo do After Effects" src="https://cdn.discordapp.com/attachments/965003047824683098/1164343271804387388/image.png?ex=6542de2c&is=6530692c&hm=631138e699bf7bae1b59b7a53192a6472a1d3c9b9532cc1ecec416a7aaf315a0&" />
                             <div>
                                 <h3>After Effects</h3>
                                 <span>
@@ -47,7 +47,7 @@ export default function Skills() {
                     </div>
                     <div>
                         <li>
-                            <img src="https://cdn.discordapp.com/attachments/965003047824683098/1164343424053424258/image.png?ex=6542de50&is=65306950&hm=fa89482cc95f99439bc211773d74563e2b073d6cdf73ef8237e56b26ad5e2c2f&" />
+                            <img alt="Logo do Blender" src="https://cdn.discordapp.com/attachments/965003047824683098/1164343424053424258/image.png?ex=6542de50&is=65306950&hm=fa89482cc95f99439bc211773d74563e2b073d6cdf73ef8237e56b26ad5e2c2f&" />
                             <div>
                                 <h3>Blender</h3>
                                 <span>
@@ -60,7 +60,7 @@ export default function Skills() {
                             </div>
                         </li>
                         <li>
-                            <img src="https://cdn.discordapp.com/attachments/965003047824683098/1164343470299828265/image.png?ex=6542de5b&is=6530695b&hm=2406ebabdf43e20b98e6558af59466ce82b0a7e1910f6e5d21523eeaca8cdded&" />
+                            <img alt="Logo do JavaScript" src="https://cdn.discordapp.com/attachments/965003047824683098/1164343470299828265/image.png?ex=6542de5b&is=6530695b&hm=2406ebabdf43e20b98e6558af59466ce82b0a7e1910f6e5d21523eeaca8cdded&" />
                             <div>
                                 <h3>JavaScript</h3>
                                 <span>
@@ -73,7 +73,7 @@ export default function Skills() {
                             </div>
                         </li>
                         <li>
-                            <img src="https://cdn.discordapp.com/attachments/965003047824683098/1164343783941484544/image.png?ex=6542dea6&is=653069a6&hm=1e24271c2046a2ad06a138167a823b5e5a64d0ef67c42fea7a11d4f3c4f8b4fa&" />
+                            <img alt="Logo do React" src="https://cdn.discordapp.com/attachments/965003047824683098/1164343783941484544/image.png?ex=6542dea6&is=653069a6&hm=1e24271c2046a2ad06a138167a823b5e5a64d0ef67c42fea7a11d4f3c4f8b4fa&" />
                             <div>
                                 <h3>React</h3>
                                 <span>
