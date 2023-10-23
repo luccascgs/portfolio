@@ -28,6 +28,7 @@ export const Label = styled.label`
         font-family: 'Archivo Black', sans-serif;
         font-size: 2rem;
         background: linear-gradient(rgba(0,0,0,0), ${colors.black} 100%);
+        text-align: center;
     }
 
     h4{
@@ -39,6 +40,16 @@ export const Label = styled.label`
         opacity: 1;
         h4{
             transform: translateY(0);
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        footer{
+            font-size: 1rem;
+            border-radius: 1rem;
+        }
+        img {
+            border-radius: 1.05rem;
         }
     }
 `;

@@ -1,7 +1,9 @@
+import { SkillsArticle, Border, CircleText } from "./styles";
+
 export default function Skills() {
     return (
-        <article className="skills">
-            <h2>HABILIDADES<div /></h2>
+        <SkillsArticle>
+            <h2>HABILIDADES<Border /></h2>
             <div className="container">
                 <ul>
                     <div>
@@ -87,7 +89,7 @@ export default function Skills() {
                         </li>
                     </div>
                 </ul>
-                <div className="textCircle">
+                <CircleText>
                     <svg width="123" height="123" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" clipRule="evenodd" d="M61.5 122.88C61.5 106.73 54.41 92.61 42.34 80.54C30.27 68.47 16.16 61.5 0 61.5C16.16 61.5 30.27 54.41 42.34 42.31C54.41 30.21 61.5 16.1 61.5 0C61.5 16.15 68.47 30.27 80.54 42.34C92.61 54.41 106.72 61.5 122.88 61.5C106.73 61.5 92.61 68.47 80.54 80.54C68.47 92.61 61.5 106.72 61.5 122.88Z" fill="currentColor" />
                     </svg>
@@ -99,8 +101,8 @@ export default function Skills() {
                             </textPath>
                         </text>
                     </svg>
-                </div>
+                </CircleText>
             </div>
-        </article >
+        </SkillsArticle >
     );
 }
