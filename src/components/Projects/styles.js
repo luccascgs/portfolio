@@ -1,46 +1,42 @@
 import styled from "styled-components";
 import { colors } from "../../variables";
 
-export const Title = styled.div`
-  height: 70vh;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-  @media screen and (max-width: 900px) {
-    height: 20vh;
-  }
-`;
-
-export const Container = styled.div`
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 20vh;
-  line-height: 20vh;
-  z-index: -1;
-  transform: rotateZ(-10deg);
-
-  @media screen and (max-width: 900px) {
-    font-size: 5vh;
-    line-height: 5vh;
-  }
-`;
-
-export const Line = styled.div`
+export const Section = styled.section`
+  
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 3vw;
-`;
+  flex-direction: column; 
 
-export const Border = styled.div`
-  border: 10px ${colors.emerald} solid;
-  background-color: ${colors.emerald};
+  h1{
+    font-family: Brasika;
+    color: ${colors.emerald};
+
+    font-size: 4rem;
+    line-height: 4rem;
+
+    margin-top: 2rem;
+  }
+
+  h2{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
   @media screen and (max-width: 900px) {
-    border: 5px ${colors.emerald} solid;
+    h1{
+      font-size: 13vw;
+      line-height: 13vw;
+    }
+    h2{
+      font-size: 10vw;
+      line-height: 10vw;
+    }
   }
 `;
 
-export const Outline = styled.h1`
-  color: transparent;
-  -webkit-text-stroke-width: 0.1vh;
-  -webkit-text-stroke-color: ${colors.white};
+export const Grid = styled.article`
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr auto;
+  gap: 1rem;
 `;

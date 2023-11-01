@@ -38,4 +38,9 @@ export const Container = styled.footer`
     svg{
         height: 32px;
     }
+    @media screen and (max-width: 600px) {
+        div {width: 80%;}
+        span{display: none;};
+        ul {width: 50%!important;};
+    }
 `;

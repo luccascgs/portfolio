@@ -1,16 +1,16 @@
 import ProjectLabel from "../ProjectLabel";
-import { Section } from `./styles`;
+import { Section, Grid } from "./styles";
 
 export default function Projects() {
     return (
-        <section className="projects">
+        <Section>
             <h1>ANIMAÇÃO</h1>
             <h2>DE PRODUTO</h2>
-            <div className="grid">
-                <ProjectLabel title={"RedBull"} alt={"Lata de Redbull"} img={""} />
-                <ProjectLabel title={"Iphone 15"} alt={"Câmera do Iphone"} img={""} />
-                <ProjectLabel title={"Mel Pantaneiro"} alt={"Pote de mel"} img={""} />
-            </div>
-        </section>
+            <Grid>
+                <ProjectLabel title={"RedBull"} alt={"Lata de Redbull"} img={""} route={"/redbull"} />
+                <ProjectLabel title={"Iphone 15"} alt={"Câmera do Iphone"} img={""} route={"/iphone-15"} />
+                <ProjectLabel title={"Mel Pantaneiro"} alt={"Pote de mel"} img={""} route={"/mel-pantaneiro"} />
+            </Grid>
+        </Section>
     );
 }

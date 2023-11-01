@@ -5,13 +5,9 @@ export const Label = styled.label`
     display: flex;
     height: 30vw;
     width: 30vw;
-    img{
-        border-radius: 2.1rem;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
+    background-image: url("https://picsum.photos/536/354");
 
+    border-radius: 2rem;
     footer{
         overflow: hidden;
         transition: 0.3s;
@@ -30,26 +26,24 @@ export const Label = styled.label`
         background: linear-gradient(rgba(0,0,0,0), ${colors.black} 100%);
         text-align: center;
     }
-
     h4{
         transition: 0.2s;
         transform: translateY(200%);
     }
-
     footer:hover{
         opacity: 1;
         h4{
             transform: translateY(0);
         }
     }
-
     @media screen and (max-width: 900px) {
+        border-radius: 1rem;
         footer{
             font-size: 1rem;
             border-radius: 1rem;
         }
-        img {
-            border-radius: 1.05rem;
-        }
+    }
+    a{
+        color: ${colors.white};
     }
 `;

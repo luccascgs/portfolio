@@ -74,6 +74,7 @@ export const HeaderPc = styled.header`
     .scribble {
         transform: translateY(10%);
         height: 9rem;
+        width: auto;
         position: absolute;
     }
 `;

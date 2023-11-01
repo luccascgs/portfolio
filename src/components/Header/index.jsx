@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
-import { Container } from "./styles";
+import { Nav, Reactable, OpenLinksButton } from "./styles";
+import { useState } from "react";
 
-export default function Footer() {
+export default function Header() {
+    const [extendNav, setExtendNav] = useState(false);
+
     return (
-        <Container>
-            <div>
-                <span>© 2023 Luccas Gomes, Inc.</span>
-                <Link to={"/"}>
+        <div>
+            <Nav>
+                <Link to="/">
                     <svg className="logo" height="314" viewBox="0 0 233 314" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M232.46 313.62C213.787 293.327 190.764 277.521 165.117 267.387C139.469 257.252 111.861 253.052 84.36 255.1C94.0044 246.706 102.776 237.358 110.54 227.2C122.96 210.95 136.64 193.2 140.8 173.57C135.23 207.95 127.85 227.06 155.32 224.14C162.32 225.79 206.37 236.98 224.77 277.44C229.877 288.816 232.499 301.15 232.46 313.62Z" fill="currentColor"></path>
                         <path d="M181 142.28C179.474 136.508 177.297 130.929 174.51 125.65C154.44 87.7 108.71 77.9 96.06 75.65C92.92 86.7233 89.7867 97.7933 86.66 108.86C82.99 124.4 87.14 139.32 97.37 146.74L97.46 146.81C99.6226 148.327 101.955 149.585 104.41 150.56C95.08 147.11 83.41 140.92 77.19 129.22C64.19 104.82 86.52 78.59 71.94 59.63C64.17 49.52 55.1 53.43 43.74 40.49C34.29 29.75 31.48 16.72 30.56 7.48999C38.88 24.11 55.78 28.27 64.79 32.02C85.62 40.69 99.65 41.15 137.79 54.02C139.29 54.53 139.68 54.66 140.09 54.82C153.14 59.63 171.61 71.39 180.42 93.04C190 116.44 182.86 137.3 181 142.28Z" fill="currentColor"></path>
@@ -17,18 +19,28 @@ export default function Footer() {
                         <path d="M213.64 62.34C216.79 73.78 216.26 91.66 197.56 118.71C199.614 103.734 196.895 88.492 189.79 75.15C187.007 70.0104 183.568 65.254 179.56 61C177.13 43.93 185.81 28 199.77 22.14C214.89 15.84 229.29 24.33 230.88 25.3C220.45 25.51 209.03 27.3 205.88 34.14C202.27 41.9 210.36 50.46 213.64 62.34Z" fill="currentColor"></path>
                     </svg>
                 </Link>
-                <ul>
-                    <a href="https://www.linkedin.com/in/luccascgs/" target="_blank" rel="noreferrer">
-                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    </a>
-                    <a href="https://github.com/luccascgs/" target="_blank" rel="noreferrer">
-                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                    </a>
-                    <a href="https://instagram.com/luccascgs" target="_blank" rel="noreferrer">
-                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                    </a>
-                </ul>
-            </div>
-        </Container>
+                <div id="expansiveNav">
+                    <OpenLinksButton
+                        onClick={() => {
+                            setExtendNav((curr) => !curr);
+                        }}
+                    >
+                        {extendNav ? <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> : <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>}
+                    </OpenLinksButton>
+                    <Link to="/">Início</Link>
+                    <Link to="/">Projetos</Link>
+                    <Link to="/">Contato</Link>
+                    <Link to="/">Certificados</Link>
+                </div>
+            </Nav>
+            {extendNav && (
+                <Reactable>
+                    <Link to="/">Início</Link>
+                    <Link to="/">Projetos</Link>
+                    <Link to="/">Contato</Link>
+                    <Link to="/">Certificados</Link>
+                </Reactable>
+            )}
+        </div>
     );
 }
